@@ -1,17 +1,24 @@
 import tkinter as tk
 
-def sendData():
-    jumlah = inputData.get()
-    tk.Label(main, text="Yang harus dizakatkan : " + jumlah*2.5 + " kg").grid(row=4, column=1, sticky=tk.W)
+
     
 main = tk.Tk()
-main.title("Aplikasi Penghitung Zakat")
-main.geometry("500x1000")
+main.title("Aplikasi Data Zakat")
+main.geometry("500x500")
 
-inputData = tk.Entry(main)
 
-tk.Label(main, text="Jumlah Anggota Keluarga : ").grid(row=0, column=0)
-inputData.grid(row=0, column=1)
-tk.Button(main, text="Tampilkan", command=sendData).grid(row=0, column=2)
+
+jumlah = tk.Label(
+    main, 
+    text="Jumlah Anggota Keluarga : ")
+
+jumlah.place(relx=0.01, rely=0.02)
+
+hitung = tk.Button(
+    main, 
+    text="Hitung")
+
+hitung.place(relx=0.38, rely=0.01, height=30)
+
 
 tk.mainloop()
