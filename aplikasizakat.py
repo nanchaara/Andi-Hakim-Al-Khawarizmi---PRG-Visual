@@ -1,7 +1,6 @@
 import tkinter as tk
 
 
-    
 main = tk.Tk()
 main.title("Aplikasi Data Zakat")
 main.geometry("500x500")
